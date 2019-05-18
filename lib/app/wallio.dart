@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:wallio/app/browse_images.dart';
+import 'package:wallio/app/models/image.dart' as DisplayImage;
+import 'package:wallio/app/pages/browse_images.dart';
+import 'package:wallio/app/util/network.dart';
+import 'package:wallio/app/widgets/image_display.dart';
 
 class Wallio extends StatelessWidget {
   @override
@@ -14,7 +17,25 @@ class Wallio extends StatelessWidget {
       routes: {
         '/': (context) => BrowseImages(),
       },
-      onGenerateRoute: (context) => null,
+      onGenerateRoute: (RouteSettings settings) {
+        final List<String> pathElements = settings.name.split('/');
+
+        if (pathElements[0] != '') {
+          return null;
+        }
+        if (pathElements[1] == 'images') {
+
+          String query = pathElements[2];
+          DisplayImage.Image imageToDisplay =
+              Storage.images.images[int.parse(pathElements[3])];
+
+          return MaterialPageRoute(builder: (BuildContext context) {
+            return ImageDisplay(displayImage: imageToDisplay, query: query);
+          });
+        } else {
+          return null;
+        }
+      },
     );
   }
 }

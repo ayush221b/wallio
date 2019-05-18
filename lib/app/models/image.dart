@@ -12,10 +12,10 @@ class Image {
     @required this.views
   });
 
-  Image.fromMap(Map decodedResponseBody) {
+  Image.fromMap(Map searchResult) {
 
-    imageUrl = decodedResponseBody['webformatURL'];
-    photographer = decodedResponseBody['user'];
-    views = decodedResponseBody['views'];
+    imageUrl = searchResult['webformatURL'];
+    photographer = searchResult['user'];
+    views = searchResult['views'];
   }
 }

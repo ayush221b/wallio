@@ -3,7 +3,7 @@ import 'package:wallio/app/models/image.dart';
 
 class ImageList {
 
-  List<Image> images;
+  List<Image> images = [];
   String searchQuery;
 
   ImageList({
@@ -11,7 +11,7 @@ class ImageList {
     @required this.searchQuery
   });
 
-  ImageList.addToList(Image image) {
+  addToList(Image image) {
     images.add(image);
   }
 }
