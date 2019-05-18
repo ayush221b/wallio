@@ -5,6 +5,7 @@ class Wallio extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Wallio',
       theme: ThemeData(
         primarySwatch: Colors.red,
