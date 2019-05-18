@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 import 'package:wallio/app/models/image.dart' as DisplayImage;
 import 'package:wallio/app/pages/browse_images.dart';
 import 'package:wallio/app/util/network.dart';
@@ -9,7 +9,7 @@ class Wallio extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Wallio',
+      title: 'Wall I/O - The Image Browser',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),

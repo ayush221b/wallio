@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 import 'package:wallio/app/models/image_list.dart';
 import 'package:wallio/app/util/network.dart';
 import 'package:wallio/app/widgets/image_grid.dart';
@@ -64,6 +64,7 @@ class _BrowseImagesState extends State<BrowseImages> {
                         },
                       ),
                       border: OutlineInputBorder(
+                        
                           borderRadius:
                               BorderRadius.all(Radius.circular(8.0)))),
                 )),

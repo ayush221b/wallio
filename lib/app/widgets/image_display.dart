@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 
 import 'package:wallio/app/models/image.dart' as DisplayImage;
 
@@ -12,9 +12,6 @@ class ImageDisplay extends StatelessWidget {
   Widget build(BuildContext context) {
     double deviceHeight = MediaQuery.of(context).size.height;
     double deviceWidth = MediaQuery.of(context).size.width;
-
-    TextStyle headerStyle =
-        TextStyle(color: Colors.black, fontFamily: 'Roboto', fontSize: 24.0);
 
     TextStyle authorStyle =
         TextStyle(color: Colors.black, fontFamily: 'Roboto', fontSize: 20.0);
