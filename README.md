@@ -2,6 +2,8 @@
 
 A simple flutter application which implements JSON-parsing and animations for Android, iOS, Web and Desktop.
 
+<img src="https://i.ibb.co/KzrcRN5/Screenshot-from-2019-05-19-12-30-14.png" alt="drawing" height="300"/>
+
 ## Running the App
 
 To run this code, do the following:
@@ -38,3 +40,27 @@ Note: If you face any difficulties, please refer [this article](https://medium.c
 4. Run Flutter for Desktop: `flutter run`
 
 Note: If you face any difficulties, please refere [this article](https://medium.com/flutter-community/flutter-for-desktop-create-and-run-a-desktop-application-ebeb1604f1e0).
+
+## Screenshots
+
+### Mobile (Android)
+
+<img src="https://i.ibb.co/s19rsS4/Screenshot-2019-05-19-12-23-50-663-tech-ayushshekhar-wallio.png" alt="drawing" width="200"/>
+
+<img src="https://i.ibb.co/dpcKDyP/Screenshot-2019-05-19-12-24-04-278-tech-ayushshekhar-wallio.png" alt="drawing" width="200"/>
+
+<img src="https://i.ibb.co/DKMnBHB/Screenshot-2019-05-19-12-24-08-591-tech-ayushshekhar-wallio.png" alt="drawing" width="200"/>
+
+### Web (Chrome)
+
+<img src="https://i.ibb.co/k0TY2Ms/Screenshot-from-2019-05-19-12-26-13.png" alt="drawing" height="200"/>
+
+<img src="https://i.ibb.co/yf0Ttpp/Screenshot-from-2019-05-19-12-26-54.png" alt="drawing" height="200"/>
+
+<img src="https://i.ibb.co/f1nbLyL/Screenshot-from-2019-05-19-12-26-59.png" alt="drawing" height="200"/>
+
+### Desktop (Ubuntu)
+
+<img src="https://i.ibb.co/ZzYzW0z/Screenshot-from-2019-05-19-12-28-04.png" alt="drawing" height="200"/>
+
+<img src="https://i.ibb.co/nCMSQV7/Screenshot-from-2019-05-19-12-28-25.png" alt="drawing" height="200"/>
