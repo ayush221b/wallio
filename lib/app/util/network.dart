@@ -10,6 +10,7 @@ class Storage {
   static ImageList images = ImageList(searchQuery: '', images: []);
 
   static Future<ImageList> getImagesForSearch(String query) async {
+    images = ImageList(searchQuery: '', images: []);
     String parsedQuery = query.trim().replaceAll(new RegExp(r' '), '+');
 
     String baseUrl = 'https://pixabay.com/api/';
