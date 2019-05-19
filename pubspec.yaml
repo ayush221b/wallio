@@ -1,34 +1,40 @@
 name: wallio
-description: A simple flutter application which implements JSON-parsing and animations for Android, iOS, Web and Desktop.
-
-version: 1.0.0+1
+description: An example project for flutter-desktop-embedding.
 
 environment:
-  sdk: ">=2.2.2 <3.0.0"
+  sdk: '>=2.0.0 <3.0.0'
+  # The example interacts with build scripts on the Flutter side that are not
+  # yet stable, so it requires a very recent version of Flutter.
+  # This version will increase regularly as the build scripts change.
+  flutter: '>=1.5.9-pre.270'
 
 dependencies:
   flutter:
     sdk: flutter
-  http: ^0.12.0+2
+  http: any
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^0.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-# The following section is specific to Flutter.
 flutter:
   uses-material-design: true
 
+  # See https://github.com/flutter/flutter/wiki/Desktop-shells#fonts
   fonts:
     - family: Roboto
       fonts:
-        - asset: assets/fonts/Roboto/Roboto-Light.ttf
+        - asset: fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+        - asset: fonts/Roboto/Roboto-Light.ttf
           weight: 300
-        - asset: assets/fonts/Roboto/Roboto-Regular.ttf
+        - asset: fonts/Roboto/Roboto-Regular.ttf
           weight: 400
-        - asset: assets/fonts/Roboto/Roboto-Bold.ttf
+        - asset: fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto/Roboto-Bold.ttf
           weight: 700
+        - asset: fonts/Roboto/Roboto-Black.ttf
+          weight: 900
